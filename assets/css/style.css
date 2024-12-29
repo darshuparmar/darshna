@@ -155,7 +155,7 @@ h6 {
   list-style: none;
 }
 
-.nav-menu>ul>li {
+.nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
 }
@@ -166,7 +166,7 @@ h6 {
   align-items: center;
   color: #a8a9b4;
   padding: 12px 15px;
-  margin-bottom: 8px;
+  margin-bottom: 1px;
   transition: 0.3s;
   font-size: 15px;
 }
@@ -181,7 +181,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover>a {
+.nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
@@ -189,14 +189,14 @@ h6 {
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
-.nav-menu li:hover>a i {
+.nav-menu li:hover > a i {
   color: #149ddd;
 }
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  right: 15px;
+  right: 14px;
   top: 15px;
   z-index: 9998;
   border: 0;
@@ -259,6 +259,12 @@ h6 {
 }
 
 #hero p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+#hero a {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
@@ -352,7 +358,7 @@ section {
 }
 
 .about .content ul strong {
-  margin-left: 10px;
+  margin-left: 2px;
 }
 
 .about .content ul i {
@@ -364,6 +370,33 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+/* Style table data cells */
+.info-table td {
+  padding: 1px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style the first column to make labels stand out */
+.info-table td strong {
+  color: #333;
+}
+
+/* Add icons style */
+.info-table td i {
+  color: #007bff;
+  margin-right: 1px;
+}
+
+/* Hover effect for rows */
+.info-table tr:hover {
+  background-color: #f0f8ff;
+  /* cursor: pointer; */
+}
+
+/* Optional: Add spacing between the table and other content */
+.col-lg-12 {
+  margin: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -380,14 +413,14 @@ section {
 
 .facts .count-box i {
   display: block;
-  font-size: 44px;
+  font-size: 30px;
   color: #149ddd;
   float: left;
   line-height: 0;
 }
 
 .facts .count-box span {
-  font-size: 48px;
+  font-size: 4px;
   line-height: 40px;
   display: block;
   font-weight: 700;
@@ -406,7 +439,7 @@ section {
 .facts .count-box a {
   font-weight: 600;
   display: block;
-  margin-top: 20px;
+  margin-top: 0px;
   color: #122f57;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
@@ -418,7 +451,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -452,6 +485,38 @@ section {
   height: 10px;
   transition: 0.9s;
   background-color: #149ddd;
+}
+
+/*--------------------------------------------------------------
+# Journey
+--------------------------------------------------------------*/
+.journey .project-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.gallery {
+  padding: 60px 0;
+}
+
+.gallery .gallery-item {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.gallery .gallery-item img {
+  width: 200px;
+  height: 250px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.gallery .gallery-item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 /*--------------------------------------------------------------
@@ -599,7 +664,7 @@ section {
   background: rgba(20, 157, 221, 0.95);
 }
 
-.portfolio .portfolio-wrap .portfolio-links a+a {
+.portfolio .portfolio-wrap .portfolio-links a + a {
   border-left: 1px solid #37b3ed;
 }
 
@@ -632,7 +697,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -640,7 +708,10 @@ section {
   border: 1px solid #149ddd;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #149ddd;
 }
 
@@ -663,7 +734,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -827,6 +898,23 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #149ddd;
 }
+/* Style the table */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+}
+
+/* Style table headers */
+.info-table th {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+}
 
 /*--------------------------------------------------------------
 # Contact
@@ -934,7 +1022,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -989,7 +1077,7 @@ section {
   padding: 10px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #149ddd;
   border: 0;
   padding: 10px 24px;
@@ -998,7 +1086,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #37b3ed;
 }
 
@@ -1034,11 +1122,11 @@ section {
   font-size: 15px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #0e2442;
